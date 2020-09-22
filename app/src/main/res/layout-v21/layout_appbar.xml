@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lin"
+    android:elevation="4dp">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/action_bar"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/toolbar_theme"
+        app:popupTheme="?attr/popup"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+
+        >
+        <RelativeLayout
+            android:id="@+id/public_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/charcoal_gray">
+
+            <LinearLayout
+                android:id="@+id/left_layout"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gps_status"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/back"
+                    />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/left_layout"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/main_title_front_camera"
+                android:textColor="@color/strip"
+                android:textSize="16sp" />
+
+
+
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toStartOf="@+id/app_home"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_search_white_24dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/app_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_home_white_24dp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/buttonbarframe"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/action_bar">
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:id="@+id/scroll"
+            android:paddingRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:id="@+id/pathbar"
+            android:paddingRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:id="@+id/scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:paddingLeft="72dp"
+                android:paddingTop="5dp">
+
+                <LinearLayout
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        style="@android:style/TextAppearance.Medium"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullpath" />
+                    <TextView
+                        android:clickable="false"
+                        android:layout_width="wrap_content"
+                        style="@android:style/TextAppearance.Medium"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullpath_anim"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:textSize="12sp"
+                android:paddingBottom="8dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="72dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/pathname" />
+
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.appbar.AppBarLayout>

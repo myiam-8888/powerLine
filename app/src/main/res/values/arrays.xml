@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="manage_logo">
+        <item>账号登录</item>
+        <item>账号退出</item>
+        <item>账号信息</item>
+
+    </string-array>
+
+    <string-array name="dji_manege">
+        <item>大疆APP激活</item>
+        <item>飞机绑定状态</item>
+        <item>账号登录状态</item>
+    </string-array>
+
+    <string-array name="tower_manege">
+        <item>单回路直线塔</item>
+        <item>单回路耐张塔</item>
+        <item>双回路直线塔</item>
+        <item>双回路耐张塔</item>
+    </string-array>
+
+    <string-array name="map_manege">
+        <item>杆塔导入</item>
+        <item>瓦片缓存</item>
+
+    </string-array>
+
+    <string-array name="inspection_mode_">
+        <item>手动精细化巡检</item>
+        <item>自动巡检模式</item>
+        <item>红外测温</item>
+    </string-array>
+
+
+    <string-array name="operate_local_file_items">
+        <item>在手机打开文件</item>
+        <item>删除本地文件</item>
+        <item>删除本地所有文件</item>
+    </string-array>
+
+
+
+
+    <string-array name="theme">
+        <item>@string/light</item>
+        <item>@string/dark</item>
+        <item>@string/daytime</item>
+        <item>@string/black</item>
+
+    </string-array>
+    <string-array name="columns">
+        <item>@string/default_string</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="directorysortmode">
+        <item>@string/foldersOnTop</item>
+        <item>@string/filesOnTop</item>
+        <item>@string/none_on_top</item>
+    </string-array>
+    <string-array name="sortby">
+        <item>@string/sort_name</item>
+        <item>@string/lastModified</item>
+        <item>@string/sort_size</item>
+        <item>@string/type</item>
+    </string-array>
+
+    <string-array name="sortbyApps">
+        <item>@string/sort_name</item>
+        <item>@string/lastModified</item>
+        <item>@string/sort_size</item>
+    </string-array>
+
+
+
+    <string-array name="menus">
+        <item>全部</item>
+        <item>1#</item>
+        <item>2#</item>
+        <item>3#</item>
+        <item>4#</item>
+        <item>5#</item>
+        <item>6#</item>
+        <item>7#</item>
+        <item>8#</item>
+        <item>9#</item>
+        <item>10#</item>
+        <item>11#</item>
+        <item>12#</item>
+        <item>13#</item>
+        <item>14#</item>
+        <item>15#</item>
+        <item>16#</item>
+        <item>17#</item>
+        <item>18#</item>
+        <item>19#</item>
+        <item>20#</item>
+        <item>21#</item>
+        <item>22#</item>
+        <item>23#</item>
+        <item>24#</item>
+        <item>25#</item>
+    </string-array>
+
+    <string-array name="content">
+        <item>葫芦娃的瓶盖1</item>
+        <item>葫芦娃的瓶盖2</item>
+        <item>葫芦娃的瓶盖3</item>
+        <item>葫芦娃的瓶盖4</item>
+        <item>葫芦娃的瓶盖5</item>
+        <item>葫芦娃的瓶盖6</item>
+        <item>葫芦娃的瓶盖7</item>
+        <item>葫芦娃的瓶盖8</item>
+        <item>葫芦娃的瓶盖1</item>
+        <item>葫芦娃的瓶盖2</item>
+        <item>葫芦娃的瓶盖3</item>
+        <item>葫芦娃的瓶盖4</item>
+        <item>葫芦娃的瓶盖5</item>
+        <item>葫芦娃的瓶盖6</item>
+        <item>葫芦娃的瓶盖7</item>
+        <item>葫芦娃的瓶盖8</item>
+        <item>葫芦娃的瓶盖1</item>
+        <item>葫芦娃的瓶盖2</item>
+        <item>葫芦娃的瓶盖3</item>
+        <item>葫芦娃的瓶盖4</item>
+        <item>葫芦娃的瓶盖5</item>
+        <item>葫芦娃的瓶盖6</item>
+        <item>葫芦娃的瓶盖7</item>
+        <item>葫芦娃的瓶盖8</item>
+    </string-array>
+
+</resources>

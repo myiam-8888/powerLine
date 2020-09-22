@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/app_background_color"
+   >
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+
+            android:background="@drawable/show_photo_btn"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+    <ScrollView
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/whole_tower"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/whole_tower"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/insulator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/insulator"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+
+                android:id="@+id/fittings"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/fittings"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ground_wire"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/ground_wire"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/ancillary_facilities"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/ancillary_facilities"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/basics"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/show_photo_btn"
+                android:gravity="center"
+                android:text="@string/basics"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/show_photo_btn"
+                    android:gravity="center"
+                    android:text="@string/shortcut"
+                    android:textColor="@color/red"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="2dp"
+                        android:background="@drawable/show_photo_btn"
+                        android:gravity="center"
+                        android:text="@string/slotting"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/show_photo_btn"
+                        android:gravity="center"
+                        android:text="@string/bird_nest"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="30dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:layout_marginEnd="2dp"
+                        android:background="@drawable/show_photo_btn"
+                        android:gravity="center"
+                        android:text="@string/foreign_body"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="2dp"
+                        android:background="@drawable/show_photo_btn"
+                        android:gravity="center"
+                        android:text="@string/rust"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+
+    <include layout="@layout/no_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <com.inspection.powerline.adapter.PhotoViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/photo_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_gravity="top|center_horizontal"
+
+            android:text="@string/rust"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+    </FrameLayout>
+
+</LinearLayout>

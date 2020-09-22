@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical">
+
+    <!-- 实现Tab标签的居底主要是通过设置属性 android:layout_weight="1" -->
+    <!-- 还要注意FrameLayout标签的位置，要写在TabWidget标签的前面 -->
+
+    <include layout="@layout/public_title" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="123dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/sum_fly_time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/cab_kongxian_cor"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exit"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sum_fly_time"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/sum_fly_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0小时0分钟"
+                        android:textColor="@color/greyish_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:id="@+id/sum_fly_mileage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/cab_kongxian_cor"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/sum_fly_time_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exit"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sum_fly_mileage"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/sum_fly_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0m"
+                        android:textColor="@color/greyish_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/sum_fly_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/cab_kongxian_cor"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/sum_fly_mileage_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exit"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sum_fly_number"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/sum_fly_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0次"
+                        android:textColor="@color/greyish_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/longest_mileage_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cab_kongxian_cor"
+                android:layout_below="@+id/sum_fly_number_layout"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/exit"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/longest_mileage"
+                        android:textColor="@color/app_bottom_tab_text_color"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/longest_mileage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="0m"
+                        android:textColor="@color/greyish_white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/cab_kongxian_cor"
+                android:gravity="center"
+                android:text="@string/export"
+                android:textColor="@color/app_bottom_tab_text_color"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/date_"
+                    android:textColor="@color/app_bottom_tab_text_color"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/mileage_"
+                    android:textColor="@color/app_bottom_tab_text_color"
+                    android:textSize="14sp" />
+
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/time_spent"
+                    android:textColor="@color/app_bottom_tab_text_color"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/inspection_tower_pole"
+                    android:textColor="@color/app_bottom_tab_text_color"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/fly_statis_list"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:divider="@color/frame_color2"
+                android:dividerHeight="1dp"
+                android:listSelector="@color/transparent" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

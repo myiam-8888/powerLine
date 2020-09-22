@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    >
+
+    <include layout="@layout/public_title" />
+    <RadioGroup
+        android:id="@+id/fileRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_background_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <RadioButton
+            android:id="@+id/local_video"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/local_video"
+            android:textColor="@color/file_radio_group"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/local_photo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/local_photo"
+            android:textColor="@color/file_radio_group"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/frame_color2"
+
+
+        />
+
+    <include layout="@layout/no_data_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color" />
+
+
+</LinearLayout>

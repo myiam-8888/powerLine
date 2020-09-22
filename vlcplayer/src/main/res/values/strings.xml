@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TOYOTA DVR</string>
+    <string name="downpath">Powerline</string>
+    <string name="subdir">Powerline</string>
+
+    <string name="tip_nosd">存储卡未安装</string>
+    <string name="tip_errorsd">无效文件系统,请格式化存储卡</string>
+    <string name="tip_needformat">无效文件系统,请格式化存储卡</string>
+    <string name="tip_sdwrerror">存储卡读写错误</string>
+    <string name="tip_reset">已经恢复默认设置，即将关闭APP</string>
+    <string name="tip_sdfull">存储卡剩余空间不足</string>
+    <string name="tip_apsetting_done">WIFI参数设置成功，请稍后重启软件</string>
+
+
+    <string name="tip_format_ok">完成存储卡格式化</string>
+    <string name="tip_snapshot_ok">拍照完成</string>
+    <string name="tip_snapshot_cardfull_fail">拍照失败:空间不足</string>
+    <string name="tip_snapping">正在连拍时无法使用本功能</string>
+    <string name="OK">确定</string>
+    <string name="Cancel">取消</string>
+    <string name="title_formatcard">格式化存储卡将清除记忆卡上所有媒体文件，是否继续？</string>
+    <string name="title_activity_listfile">文件列表</string>
+    <string name="set_default">恢复出厂设置</string>
+
+
+    <string name="warning_linkerror">设备无法连接,请检查设备状况</string>
+    <string name="filelist_selall">全选</string>
+    <string name="filelist_delsel">删除</string>
+    <string name="filelist_cancel">取消</string>
+    <string name="downing"> 正在下载</string>
+    <string name="downok"> 下载完成</string>
+    <string name="downed"> 已下载</string>
+    <string name="downerr_sdcard">无法读取到存储卡</string>
+    <string name="downerr_nostorage">手机空间不足</string>
+    <string name="downinterrupt"> 下载中止</string>
+    <string name="downerror"> 下载异常</string>
+    <string name="downneed">文件还未下载</string>
+    <string name="deltitle">是否删除?</string>
+    <string name="deldowntitle">是否放弃下载!</string>
+    <string name="delalltitle1">是否删除选中的</string>
+    <string name="delalltitle2">个文件?</string>
+    <string name="downstopok">是</string>
+    <string name="downstopno">否</string>
+
+
+    <string name="title_file_activity">文件列表</string>
+    <string name="title_file_operate">文件操作</string>
+    <string name="title_deletlocal">是否删除存储卡所选文件?</string>
+    <string name="title_deletealllocal">是否删除存储卡所有已下载文件?</string>
+    <string name="title_sort">排序</string>
+    <string name="file_list_item_size">文件尺寸:</string>
+    <string name="tip_readonlynodel">保护文件不能删除</string>
+    <string name="tip_deleting">正在删除...</string>
+    <string name="title_file_locked"> 已经被锁定</string>
+    <string name="wifi_connect_error">WIFI连接失败</string>
+    <string name="main_footer_home">首页</string>
+    <string name="main_footer_video">记录仪</string>
+    <string name="main_footer_setting">设置</string>
+    <string name="load_ing">加载中</string>
+
+
+    <string name="setting_about">关于</string>
+    <string name="setting_system_setting">系统设置</string>
+    <string name="setting_system_update_version">版本更新</string>
+    <string name="setting_system_clear_cache">清除缓存</string>
+
+
+
+    <string name="about_version">关于版本</string>
+    <string name="about_version_app">APP 版本:</string>
+    <string name="about_version_sdk">SOC 版本:</string>
+    <string name="about_version_mcu">MCU 版本:</string>
+    <string name="about_version_isp">ISP 版本:</string>
+
+    <string name="setting_dvr_stop_car_record_time">停车启动录制时长</string>
+    <string name="setting_dvr_stop_car_record_time_60_second">60s</string>
+    <string name="setting_dvr_stop_car_record_time_120_second">120s</string>
+    <string name="setting_dvr_stop_car_record_time_180_second">180s</string>
+
+    <string name="setting_dvr_gravity_sensor">碰撞灵敏度设置</string>
+    <string name="setting_dvr_gravity_sensor_height">高</string>
+    <string name="setting_dvr_gravity_sensor_middle">中</string>
+    <string name="setting_dvr_gravity_sensor_low">低</string>
+
+
+    <string name="setting_dvr_setting">DVR设置</string>
+    <string name="setting_dvr_cyclic_recording_time">视频分段时长</string>
+    <string name="setting_dvr_cyclic_recording_one_minute">1分钟</string>
+    <string name="setting_dvr_cyclic_recording_three_minute">3分钟</string>
+    <string name="setting_dvr_cyclic_recording_five_minute">5分钟</string>
+
+    <string name="setting_dvr_language_setting">语言设置</string>
+    <string name="setting_dvr_language_setting_chinese">中文</string>
+    <string name="setting_dvr_language_setting_english">英文</string>
+    <string name="setting_dvr_resolution_setting">分辨率设置</string>
+    <string name="setting_dvr_sd_formatcard_setting">格式化TF卡</string>
+    <string name="setting_dvr_show_dec">错误日志详情</string>
+    <string name="setting_dvr_update_wifi">WIFI密码修改</string>
+    <string name="setting_wifi_channel">WIFI信道修改</string>
+    <string name="setting_wifi">WIFI设置</string>
+
+    <string name="loading_not_data">暂无数据</string>
+    <string name="warning_oplinkerror">设备未连接,无法操作</string>
+    <string name="filelist_photo_file">照片文档</string>
+    <string name="filelist_guard_file">加锁文档</string>
+    <string name="filelist_playback_file">录像文档</string>
+
+    <string name="tip_playback_fail">start online playback failed</string>
+
+    <string name="local_video">本地影像</string>
+    <string name="local_photo">本地图片</string>
+    <string name="local_file">本地文档</string>
+
+    <string name="sd_card_file">TF卡文档</string>
+    <string name="take_photo">一键拍照</string>
+    <string name="volume_control">声音控制</string>
+    <string name="urgent_record">紧急录制</string>
+
+
+    <string name="load_data">数据加载中....</string>
+    <string name="not_data_for_clear">缓存数据为0B，无需清理!</string>
+    <string name="clearing_cache">清除缓存中....</string>
+    <string name="click_the_exit_program_again">再按一次退出程序</string>
+    <string name="format_sd_card">格式化TF卡中....</string>
+    <string name="language_chinese">现在已是中文!</string>
+    <string name="language_english">现在已是英文!</string>
+    <string name="setting_1080">1080P设置成功!</string>
+    <string name="setting_720">720P设置成功!</string>
+
+
+    <string name="vertical_switch">竖屏切换</string>
+    <string name="landscape_switch">横屏切换</string>
+    <string name="sd_total_capacity">TF卡总容量</string>
+    <string name="new_password">新密码:</string>
+    <string name="new_password_no">新密码不能为空!</string>
+    <string name="confirm_password">确认密码:</string>
+    <string name="confirm_password_no">确认密码不能为空!</string>
+    <string name="password_no_equals">新密码与确认密码不相等!</string>
+    <string name="new_password_length">新密码长度为8</string>
+    <string name="confirm_password_length">确认密码长度为8</string>
+    <string name="audio_record_switch">音频切换中...</string>
+
+    <string name="main_footer_help">帮助</string>
+
+    <string name="delete_error">删除失败:</string>
+
+    <string name="tip_wifipasserror">WIFI密码支持8-32个字符</string>
+
+    <string name="password_equals_old_password">新密码与旧密码相等!</string>
+
+    <string name="rec_stop_faile">停止录像失败!</string>
+
+    <string name="open_wifi">正在打开WIFI...</string>
+    <string name="wifi_connect_ok">WIFI已连接</string>
+    <string name="wifi_connect_faile">WIFI未连接</string>
+    <string name="refused_permission">拒绝位置权限，Wifi无法不开。</string>
+
+
+    <string name="resulution_720">720P</string>
+    <string name="resulution_1080">1080P</string>
+
+
+
+</resources>

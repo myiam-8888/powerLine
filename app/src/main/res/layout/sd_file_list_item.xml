@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/color_more_item"
+	>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/ItemTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="2020-09-03"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ItemText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="17KM"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ItemTitle1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="00：23：50"
+            android:gravity="center"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ItemText1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="170M"
+            android:textColor="@color/app_bottom_tab_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+

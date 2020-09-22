@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.inspection.powerline"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <permission android:name="${applicationId}.permission.CONTROL_FTP_SERVER"
+        android:protectionLevel="dangerous" />
+
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="com.amaze.cloud.permission.ACCESS_PROVIDER" />
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature android:name="android.software.leanback"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:name="com.inspection.powerline.application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        tools:replace="android:label"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name="com.inspection.powerline.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+
+
+        <activity
+            android:name="com.inspection.powerline.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+        android:name="com.inspection.powerline.SettingActivity"
+        android:configChanges="keyboardHidden|orientation|screenSize"
+        android:screenOrientation="landscape"
+        android:theme="@style/NoActionBar" />
+
+
+        <activity
+            android:name="com.inspection.powerline.TaskAllocationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.inspection.powerline.FlightStatisticsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+
+        <activity
+            android:name="com.inspection.powerline.ShowPhotoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name="com.inspection.powerline.LocalMediaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <activity
+            android:name="com.inspection.powerline.Login1Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+
+        <activity
+            android:name="com.inspection.powerline.audio.activitys.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar" />
+
+<!--        <provider-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:authorities="com.inspection.powerline.fileprovider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/file_paths" />-->
+<!--        </provider>-->
+
+
+        <activity
+            android:label="@string/appbar_name"
+            android:screenOrientation="landscape"
+            android:name="com.amaze.filemanager.ui.activities.MainActivity"
+            android:theme="@style/AppTheme.NoBar">
+
+
+        </activity>
+
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:label="@string/setting"
+            android:name="com.amaze.filemanager.ui.activities.PreferencesActivity"
+            android:theme="@style/appCompatBlack">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:label="@string/textreader"
+            android:name="com.amaze.filemanager.ui.activities.TextEditorActivity"
+            android:theme="@style/appCompatBlack">
+            <intent-filter
+                tools:ignore="AppLinkUrlError"
+                android:label="Amaze Text Editor">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="application/javascript" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="application/xml" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:label="@string/databasereader"
+            android:name="com.amaze.filemanager.ui.activities.DatabaseViewerActivity"
+            android:theme="@style/appCompatBlack"
+            android:screenOrientation="locked">
+            <intent-filter
+                tools:ignore="AppLinkUrlError"
+                android:label="Amaze Database Reader">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="db/*" />
+            </intent-filter>
+
+        </activity>
+
+<!--        <activity android:name="com.amaze.filemanager.ui.activities.AboutActivity"-->
+<!--            android:theme="@style/aboutBlack"-->
+<!--            android:label="About"-->
+<!--            />-->
+
+        <service
+            android:name = "com.amaze.filemanager.asynchronous.services.ExtractService"
+            android:label = "Extracting"
+            >
+        </service>
+        <service
+            android:name = "com.amaze.filemanager.asynchronous.services.ZipService"
+            android:label = "Compressing"
+            >
+        </service>
+        <service
+            android:name = "com.amaze.filemanager.asynchronous.services.CopyService"
+            android:label = "Copying"
+            >
+        </service>
+
+        <service android:name="com.amaze.filemanager.asynchronous.services.EncryptService"
+            android:label="@string/crypt_encrypting"
+            />
+
+        <service android:name="com.amaze.filemanager.asynchronous.services.DecryptService"
+            android:label="@string/crypt_decrypting"
+            />
+
+        <service
+            android:name="com.amaze.filemanager.asynchronous.services.ftp.FtpService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="${applicationId}.permission.CONTROL_FTP_SERVER"/>
+
+        <service android:name="com.amaze.filemanager.asynchronous.services.ftp.FtpTileService"
+            android:icon="@drawable/ic_ftp_dark"
+            android:label="@string/ftp"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.amaze.filemanager.asynchronous.services.ftp.FtpReceiver"
+            android:exported="true"
+            android:permission="${applicationId}.permission.CONTROL_FTP_SERVER">
+            <intent-filter>
+                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_START_FTPSERVER" />
+                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_STOP_FTPSERVER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
